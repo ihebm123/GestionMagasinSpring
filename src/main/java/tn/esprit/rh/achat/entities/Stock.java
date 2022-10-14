@@ -25,15 +25,15 @@ public class Stock implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idStock;
 	private String libelleStock;
-	private Integer qte;
+	private Integer quantite;
 	private Integer qteMin;
 	@OneToMany(mappedBy = "stock")
 	@JsonIgnore
 	private Set<Produit> produits;
-	public Stock(String libelleStock, Integer qte, Integer qteMin) {
+	public Stock(String libelleStock, Integer quantite, Integer qteMin) {
 		super();
 		this.libelleStock = libelleStock;
-		this.qte = qte;
+		this.quantite = quantite;
 		this.qteMin = qteMin;
 	}
 
