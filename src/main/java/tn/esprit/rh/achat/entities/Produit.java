@@ -33,7 +33,7 @@ public class Produit implements Serializable {
 	private Long idProduit;
 	private String codeProduit;
 	private String libelleProduit;
-	private float prix;
+	private float price;
 	@Temporal(TemporalType.DATE)
 	private Date dateCreation;
 	@Temporal(TemporalType.DATE)
